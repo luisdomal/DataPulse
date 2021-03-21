@@ -20,7 +20,7 @@
     color: #e94b4f;
 }
 #Banner_morethanahunch{
-    height: 350px;
+    min-height: 350px;
     background-image: url(../Sources/1x/banner_home.jpg);
     background-position: center;
     box-sizing: border-box;
@@ -45,7 +45,8 @@
 }
 #Servicios{
     flex-direction: column;
-    height: 310px;
+    height: 350px;
+    height: 100%;
     text-align: center;
 }
 #Servicios h1{
@@ -72,24 +73,33 @@
     font-weight: bold;
 }
 #Data_Pulse_Footer{
+    padding: 0;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 120px;
+    height: 100%;
     background-color: #F1F1F2;
     font-family: 'Montserrat', sans-serif;
     font-size: .9em;
     color: #5865ad;
     font-weight: lighter;
+    box-sizing: border-box;
 }
 #Data_Pulse_Footer img{
     margin: 20px 0px;
 }
-#Data_Pulse_Footer p{
+#Data_Pulse_Info p{
     margin: 10px 0px;
 }
 #footertext{
     color: #808080;
+}
+#Data_Pulse_SC{
+    background-repeat: repeat;
+    background-color: #121327;
+    color: #fff;
+    font-size: .9em;
+    margin: 0;
 }
 
 
