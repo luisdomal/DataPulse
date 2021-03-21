@@ -1,0 +1,121 @@
+#Data_Pulse_Navbar{
+    height: 95px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1667em;
+    border-bottom: 10px solid;
+    border-image: 1;
+    border-image-source: linear-gradient(to right, #e94b4f, #5865ad);
+}
+#Data_Pulse_Header{
+    padding: 0px 35px;
+}
+#navbarNav{
+    justify-content: flex-end;
+}
+#navbarNav a{
+    padding: 0px 25px;
+    color: #121327;
+}
+#navbarNav a:hover{
+    color: #e94b4f;
+}
+#Banner_morethanahunch{
+    height: 350px;
+    background-image: url(../Sources/1x/banner_home.jpg);
+    background-position: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+#Banner_morethanahunch h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.8333em;
+    color: #ffffff;
+}
+#destacado{
+    color: #e94b4f;
+}
+#Banner_morethanahunch h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3333em;
+    color: #ffffff;
+}
+#Servicios{
+    flex-direction: column;
+    height: 310px;
+    text-align: center;
+}
+#Servicios h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+}
+#Servicios h2{
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15em;
+}
+#Servicios p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    width: 125px;
+    display: flex;
+    align-items: center;
+}
+#takebetterdes, #transform{
+    color: #e94b4f;
+    font-weight: bold;
+}
+#Data_Pulse_Footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 120px;
+    background-color: #F1F1F2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    color: #5865ad;
+    font-weight: lighter;
+}
+#Data_Pulse_Footer img{
+    margin: 20px 0px;
+}
+#Data_Pulse_Footer p{
+    margin: 10px 0px;
+}
+#footertext{
+    color: #808080;
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+    #Banner_morethanahunch h1{
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+    #Banner_morethanahunch h2{
+        font-size: 1.1em;
+        text-align: center;
+        font-weight: normal;
+    }
+    #Servicios h1{
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+    #Servicios h2{
+        font-size: 1.1em;
+        font-weight: normal;
+    }
+    #takebetterdes{
+        color: #e94b4f;
+        font-weight: bold;
+    }
+}
