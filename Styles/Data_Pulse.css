@@ -13,7 +13,10 @@ html{
 #Data_Pulse_Header{
     padding: 0px 35px;
 }
-
+#Data_Pulse_Logo{
+    width: 248px;
+    height: 46px;
+}
 #navbarNav{
     justify-content: flex-end;
 }
@@ -24,6 +27,7 @@ html{
 #navbarNav a:hover{
     color: #e94b4f;
 }
+
 #Banner_morethanahunch{
     min-height: 350px;
     background-image: url(../Sources/1x/banner_home.jpg);
