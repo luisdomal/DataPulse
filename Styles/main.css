@@ -161,10 +161,10 @@
 
 #Careers {
   margin: 50px 0px;
-  height: 420px;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  height: 420px;
 }
 #Careers img {
   max-width: 71px;
@@ -357,7 +357,7 @@
   }
 
   #Careers {
-    height: 200px;
+    justify-content: center;
     text-align: center;
   }
 

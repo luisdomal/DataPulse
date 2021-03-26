@@ -207,10 +207,10 @@ $greycolor: #808080;
 }
 #Careers{
     margin: 50px 0px;
-    height: 420px;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+    height: 420px;
     img{
         max-width: 71px;
         max-height: 71px;
@@ -366,7 +366,7 @@ $greycolor: #808080;
         }
     }
     #Careers{
-        height: 200px;
+        justify-content: center;
         text-align: center;
     }
     #Data_Pulse_Info{
