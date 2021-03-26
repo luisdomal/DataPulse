@@ -51,6 +51,25 @@
   color: #ffffff;
 }
 
+#Seccion-Banner {
+  height: 180px;
+  background-color: #121327;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Seccion-Banner h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+#Seccion-Banner h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
 #Servicios {
   margin: 50px 0px;
   flex-direction: column;
@@ -91,6 +110,35 @@
   padding: 10px;
 }
 
+#About-Us {
+  margin: 85px 0px 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#About-Us #Aboutgrid {
+  margin: 0px auto;
+  max-width: 870px;
+}
+#About-Us #Aboutgrid img {
+  max-height: 71px;
+  max-width: 71px;
+  margin: 10px 20px 100px 0px;
+}
+#About-Us #Aboutgrid h3 {
+  color: #5865ad;
+  font-size: 20px;
+  text-align: justify;
+}
+#About-Us #Aboutgrid p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  color: #808080;
+  width: 100%;
+  display: flex;
+  margin-bottom: 60px;
+}
+
 #Data_Pulse_Footer {
   padding: 0;
   align-items: center;
@@ -126,6 +174,14 @@
 
 @media (min-width: 992px) {
   #Data_Pulse_Info_Mobile {
+    display: none;
+  }
+
+  #misionmobile {
+    display: none;
+  }
+
+  #visionmobile {
     display: none;
   }
 }
@@ -180,6 +236,61 @@
   #Servicios #takebetterdes {
     color: #e94b4f;
     font-weight: bold;
+  }
+
+  #Seccion-Banner {
+    height: 180px;
+    background-color: #121327;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #Seccion-Banner h1 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #Seccion-Banner h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  #About-Us {
+    margin: 85px 0px 50px 0px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #About-Us #Aboutgrid {
+    margin: 0px auto;
+    width: 100%;
+  }
+  #About-Us #Aboutgrid img {
+    max-height: 90px;
+    max-width: 90px;
+    margin: 10px 0px;
+  }
+  #About-Us #Aboutgrid h3 {
+    color: #5865ad;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #About-Us #Aboutgrid p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #808080;
+    width: 100%;
+    display: flex;
+    margin-bottom: 60px;
+  }
+  #About-Us #Aboutgrid #mision {
+    display: none;
+  }
+  #About-Us #Aboutgrid #vision {
+    display: none;
   }
 
   #Data_Pulse_Info {

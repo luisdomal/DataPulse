@@ -1,10 +1,83 @@
 $primary-font: 'Montserrat', sans-serif;
+$text-font: 'Lato', sans-serif;
 $redcolor: #e94b4f;
 $bluecolor: #121327;
 $purplecolor: #5865ad;
 $whitecolor: #ffffff;
 $greycolor: #808080;
 
+@mixin Secction-Banner1 {
+    height: 180px;
+    background-color: $bluecolor;
+    color: $whitecolor;
+    font-family: $primary-font;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+        h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+@mixin Secction-Banner1Mob {
+    height: 180px;
+    background-color: $bluecolor;
+    color: $whitecolor;
+    font-family: $primary-font;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+        h2{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+@mixin Secction-Banner2 {
+    height: 180px;
+    background-color: $bluecolor;
+    color: $whitecolor;
+    font-family: $primary-font;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        h1{
+        font-size: 20px;
+        font-weight: 400;
+    }
+        h2{
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+@mixin Secction-Banner2Mob {
+    height: 180px;
+    background-color: $bluecolor;
+    color: $whitecolor;
+    font-family: $primary-font;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        h1{
+        font-size: 18px;
+        font-weight: 400;
+    }
+        h2{
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
 #Data_Pulse_Navbar{
     height: 95px;
     font-family: $primary-font;
@@ -56,6 +129,9 @@ $greycolor: #808080;
         color: $whitecolor;
     }
 }
+#Seccion-Banner{
+    @include Secction-Banner2()
+}
 #Servicios{
     margin: 50px 0px;
     flex-direction: column;
@@ -95,6 +171,34 @@ $greycolor: #808080;
         }
     }
 }
+#About-Us{
+    margin: 85px 0px 50px;
+    text-align: center;
+    box-sizing: border-box;
+    #Aboutgrid{
+        margin: 0px auto;
+        max-width: 870px;
+        img{
+            max-height: 71px;
+            max-width: 71px;
+            margin: 10px 20px 100px 0px;
+        }
+        h3{
+            color: $purplecolor;
+            font-size: 20px;
+            text-align: justify;
+        }
+        p{
+            font-family: $text-font;
+            font-size: 18px;
+            text-align: justify;
+            color: $greycolor;
+            width: 100%;
+            display: flex;
+            margin-bottom: 60px;
+        }
+    }
+}
 #Data_Pulse_Footer{
     padding: 0;
     align-items: center;
@@ -129,6 +233,12 @@ $greycolor: #808080;
 }
 @media (min-width: 992px) {
     #Data_Pulse_Info_Mobile{
+        display: none;
+    }
+    #misionmobile{
+        display: none;
+    }
+    #visionmobile{
         display: none;
     }
 }
@@ -182,6 +292,44 @@ $greycolor: #808080;
         #takebetterdes{
             color: $redcolor;
             font-weight: bold;
+        }
+    }
+    #Seccion-Banner{
+        @include Secction-Banner2Mob()
+    }
+    #About-Us{
+        margin: 85px 0px 50px 0px;
+        text-align: center;
+        box-sizing: border-box;
+        #Aboutgrid{
+            margin: 0px auto;
+            width: 100%;
+            img{
+                max-height: 90px;
+                max-width: 90px;
+                margin: 10px 0px;
+            }
+            h3{
+                color: $purplecolor;
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+            }
+            p{
+                font-family: $text-font;
+                font-size: 18px;
+                text-align: center;
+                color: $greycolor;
+                width: 100%;
+                display: flex;
+                margin-bottom: 60px;
+            }
+            #mision{
+                display: none;
+            }
+            #vision{
+                display: none;
+            }
         }
     }
     #Data_Pulse_Info{
