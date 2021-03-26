@@ -51,7 +51,27 @@
   color: #ffffff;
 }
 
-#Seccion-Banner {
+#Seccion-Banner-Aboutus {
+  height: 180px;
+  background-color: #121327;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#Seccion-Banner-Aboutus h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+#Seccion-Banner-Aboutus h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#Seccion-Banner-Careers {
   height: 180px;
   background-color: #121327;
   color: #ffffff;
@@ -61,13 +81,13 @@
   align-items: center;
   justify-content: center;
 }
-#Seccion-Banner h1 {
-  font-size: 20px;
-  font-weight: 400;
-}
-#Seccion-Banner h2 {
+#Seccion-Banner-Careers h1 {
   font-size: 28px;
   font-weight: 700;
+}
+#Seccion-Banner-Careers h2 {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #Servicios {
@@ -111,7 +131,7 @@
 }
 
 #About-Us {
-  margin: 50px 0px 0px 0px !important;
+  margin: 85px 0px 50px 0px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -137,6 +157,25 @@
   width: 100%;
   display: flex;
   margin-bottom: 60px;
+}
+
+#Careers {
+  margin: 50px 0px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Careers img {
+  max-width: 71px;
+  max-height: 71px;
+  margin-bottom: 60px;
+}
+#Careers h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #5865ad;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 #Data_Pulse_Footer {
@@ -174,6 +213,10 @@
 
 @media (min-width: 992px) {
   #Data_Pulse_Info_Mobile {
+    display: none;
+  }
+
+  #Seccion-Banner-Careers br {
     display: none;
   }
 
@@ -238,7 +281,7 @@
     font-weight: bold;
   }
 
-  #Seccion-Banner {
+  #Seccion-Banner-Aboutus {
     height: 180px;
     background-color: #121327;
     color: #ffffff;
@@ -248,17 +291,37 @@
     align-items: center;
     justify-content: center;
   }
-  #Seccion-Banner h1 {
+  #Seccion-Banner-Aboutus h1 {
     font-size: 18px;
     font-weight: 400;
   }
-  #Seccion-Banner h2 {
+  #Seccion-Banner-Aboutus h2 {
     font-size: 24px;
     font-weight: 700;
   }
 
+  #Seccion-Banner-Careers {
+    height: 180px;
+    background-color: #121327;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #Seccion-Banner-Careers h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  #Seccion-Banner-Careers h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
   #About-Us {
-    margin: 85px 0px 50px 0px;
+    margin: 50px 0px 0px 0px;
     text-align: center;
     box-sizing: border-box;
   }
@@ -284,13 +347,18 @@
     color: #808080;
     width: 100%;
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   #About-Us #Aboutgrid #mision {
     display: none;
   }
   #About-Us #Aboutgrid #vision {
     display: none;
+  }
+
+  #Careers {
+    height: 200px;
+    text-align: center;
   }
 
   #Data_Pulse_Info {

@@ -33,6 +33,7 @@ $greycolor: #808080;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
         h1{
         font-size: 24px;
         font-weight: 700;
@@ -51,6 +52,7 @@ $greycolor: #808080;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
         h1{
         font-size: 20px;
         font-weight: 400;
@@ -129,9 +131,13 @@ $greycolor: #808080;
         color: $whitecolor;
     }
 }
-#Seccion-Banner{
+#Seccion-Banner-Aboutus{
     @include Secction-Banner2()
 }
+#Seccion-Banner-Careers{
+    @include Secction-Banner1()
+}
+
 #Servicios{
     margin: 50px 0px;
     flex-direction: column;
@@ -172,7 +178,7 @@ $greycolor: #808080;
     }
 }
 #About-Us{
-    margin: 50px 0px 0px 0px !important;
+    margin: 85px 0px 50px 0px;
     text-align: center;
     box-sizing: border-box;
     #Aboutgrid{
@@ -197,6 +203,24 @@ $greycolor: #808080;
             display: flex;
             margin-bottom: 60px;
         }
+    }
+}
+#Careers{
+    margin: 50px 0px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        max-width: 71px;
+        max-height: 71px;
+        margin-bottom: 60px;
+    }
+    h1{
+        font-family: $primary-font;
+        color: $purplecolor;
+        font-size: 20px;
+        font-weight: 700;
     }
 }
 #Data_Pulse_Footer{
@@ -234,6 +258,11 @@ $greycolor: #808080;
 @media (min-width: 992px) {
     #Data_Pulse_Info_Mobile{
         display: none;
+    }
+    #Seccion-Banner-Careers{
+        br{
+            display: none;
+        }
     }
     #misionmobile{
         display: none;
@@ -294,11 +323,15 @@ $greycolor: #808080;
             font-weight: bold;
         }
     }
-    #Seccion-Banner{
+    #Seccion-Banner-Aboutus{
         @include Secction-Banner2Mob()
     }
+    #Seccion-Banner-Careers{
+        @include Secction-Banner1Mob();
+    }
+
     #About-Us{
-        margin: 85px 0px 50px 0px;
+        margin: 50px 0px 0px 0px;
         text-align: center;
         box-sizing: border-box;
         #Aboutgrid{
@@ -322,7 +355,7 @@ $greycolor: #808080;
                 color: $greycolor;
                 width: 100%;
                 display: flex;
-                margin-bottom: 60px;
+                margin-bottom: 50px;
             }
             #mision{
                 display: none;
@@ -331,6 +364,10 @@ $greycolor: #808080;
                 display: none;
             }
         }
+    }
+    #Careers{
+        height: 200px;
+        text-align: center;
     }
     #Data_Pulse_Info{
         display: none;
