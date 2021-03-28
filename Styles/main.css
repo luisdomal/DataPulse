@@ -90,6 +90,48 @@
   font-weight: 400;
 }
 
+#Seccion-Banner-Solutions {
+  height: 180px;
+  background-color: #121327;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Seccion-Banner-Solutions h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+#Seccion-Banner-Solutions h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+#Seccion-Banner-Solutions br {
+  display: none;
+}
+
+#Seccion-Banner-Contact {
+  height: 180px;
+  background-color: #121327;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#Seccion-Banner-Contact h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+#Seccion-Banner-Contact h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
 #Servicios {
   margin: 50px 0px;
   flex-direction: column;
@@ -159,6 +201,35 @@
   margin-bottom: 60px;
 }
 
+#Solutions-Sec {
+  margin: 60px 0px 0px 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#Solutions-Sec #Solutionsgrid {
+  margin: 0px auto;
+  max-width: 850px;
+}
+#Solutions-Sec #Solutionsgrid img {
+  max-height: 71px;
+  max-width: 71px;
+  margin: 10px 20px auto 0px;
+}
+#Solutions-Sec #Solutionsgrid h3 {
+  color: #5865ad;
+  font-size: 20px;
+  text-align: justify;
+}
+#Solutions-Sec #Solutionsgrid p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  color: #808080;
+  width: 100%;
+  display: flex;
+  margin-bottom: 60px;
+}
+
 #Careers {
   margin: 50px 0px;
   flex-direction: column;
@@ -172,6 +243,25 @@
   margin-bottom: 60px;
 }
 #Careers h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #5865ad;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#Contact {
+  margin: 50px 0px;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height: 420px;
+}
+#Contact img {
+  max-width: 71px;
+  max-height: 71px;
+  margin-bottom: 60px;
+}
+#Contact h1 {
   font-family: "Montserrat", sans-serif;
   color: #5865ad;
   font-size: 20px;
@@ -225,6 +315,26 @@
   }
 
   #visionmobile {
+    display: none;
+  }
+
+  #storagemobile {
+    display: none;
+  }
+
+  #predictivenmobile {
+    display: none;
+  }
+
+  #visualizationmobile {
+    display: none;
+  }
+
+  #webpagemobile {
+    display: none;
+  }
+
+  #webappmobile {
     display: none;
   }
 }
@@ -320,6 +430,48 @@
     font-weight: 400;
   }
 
+  #Seccion-Banner-Solutions {
+    height: 180px;
+    background-color: #121327;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #Seccion-Banner-Solutions h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  #Seccion-Banner-Solutions h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #Seccion-Banner-Solutions h2 {
+    font-size: 18px !important;
+  }
+
+  #Seccion-Banner-Contact {
+    height: 180px;
+    background-color: #121327;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #Seccion-Banner-Contact h1 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #Seccion-Banner-Contact h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
   #About-Us {
     margin: 50px 0px 0px 0px;
     text-align: center;
@@ -353,6 +505,51 @@
     display: none;
   }
   #About-Us #Aboutgrid #vision {
+    display: none;
+  }
+
+  #Solutions-Sec {
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #Solutions-Sec #Solutionsgrid {
+    margin: 0px auto;
+    width: 100%;
+  }
+  #Solutions-Sec #Solutionsgrid img {
+    max-height: 90px;
+    max-width: 90px;
+    margin: 10px 0px;
+  }
+  #Solutions-Sec #Solutionsgrid h3 {
+    color: #5865ad;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #Solutions-Sec #Solutionsgrid p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #808080;
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  #Solutions-Sec #Solutionsgrid #storage {
+    display: none;
+  }
+  #Solutions-Sec #Solutionsgrid #predictive {
+    display: none;
+  }
+  #Solutions-Sec #Solutionsgrid #visualization {
+    display: none;
+  }
+  #Solutions-Sec #Solutionsgrid #webpage {
+    display: none;
+  }
+  #Solutions-Sec #Solutionsgrid #webapp {
     display: none;
   }
 
