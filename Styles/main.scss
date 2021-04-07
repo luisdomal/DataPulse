@@ -151,6 +151,8 @@ $greycolor: #808080;
     flex-direction: column;
     text-align: center;
     box-sizing: border-box;
+    min-height: 364px;
+    height: 100%;
     h1{
         margin-top: 50px;
         margin-bottom: 10px;
@@ -192,6 +194,7 @@ $greycolor: #808080;
     #Aboutgrid{
         margin: 0px auto;
         max-width: 870px;
+        min-height: 500px;
         img{
             max-height: 71px;
             max-width: 71px;
@@ -246,7 +249,7 @@ $greycolor: #808080;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    height: 420px;
+    min-height: 534px;
     img{
         max-width: 71px;
         max-height: 71px;
@@ -260,7 +263,8 @@ $greycolor: #808080;
     }
 }
 #Contact{
-    max-width: 800px;
+    max-width: 1200px;
+    min-height: 534px;
     margin: 50px auto;
     position: relative;
     padding: 30px;
@@ -268,38 +272,63 @@ $greycolor: #808080;
         .form-field{
             position: relative;
             margin: 32px 0;
-            .input-text{
-                display: block;
-                width: 100%;
-                height: 36px;
-                border-width: 0 0 2px 0;
-                border-color: #5543ca;
-                line-height: 26px;
-                font-size: 18px;
-                font-weight: 400;
-            }
-            .input-text:focus{
-                outline: none;
-            }
-            .label{
-                position: absolute;
-                left: 20px;
-                bottom: 11px;
-                font-size: 18px;
-                line-height: 26px;
-                font-weight: 400;
-                color: #5543ca;
-                cursor: text;
-                transition: transform 0.2s ease-in-out;
-            }
-
+        }
+        .input-text{
+            display: block;
+            width: 100%;
+            font-family: $text-font;
+            font-size: 14px;
+            color: $greycolor;
+            border-width: 0 0 2px 0;
+            border-color: $greycolor;
+            line-height: 26px;
+            font-weight: 400;
+        }
+        .input-text:focus {
+            outline: none;
+        }
+        .input-text:focus + .label,
+        .input-text.not.empty + .label{
+            transform: translateY(-30px);
+        }
+        .input-text + .label,
+        .input-text + .label{
+            transform: translateY(-15px);
+        }
+        .label{
+            position: absolute;
+            left: 20px;
+            bottom: 11px;
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: $text-font;
+            color: $greycolor;
+            cursor: text;
+            transition: transform 0.2s ease-in-out;
+        }
+        .form-check-input{
+            margin: 5px 5px 0px 0;
+        }
+        .submit-btn{
+            font-weight: 600;
+            padding: 10px 30px;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: $text-font;
+            color: $whitecolor;
+            background-color: $purplecolor;
+            border-color: $bluecolor;
+            border-radius: 0px;
+            cursor: pointer;
+        }
+        .submit-btn:hover{
+            background-color: $bluecolor;
         }
     }
-    
-
-    
-
 }
+
 #Data_Pulse_Footer{
     padding: 0;
     align-items: center;
@@ -512,6 +541,22 @@ $greycolor: #808080;
     #Careers{
         justify-content: center;
         text-align: center;
+    }
+    #Contact{
+        margin: 50px auto;
+        position: relative;
+        padding: 30px;
+        .contact-form{
+            .form-field{
+                position: relative;
+                margin: 32px 0;
+            }
+            .submit-btn{
+                display: inline-block;
+                font-weight: 600;
+                padding: 15px 45px;
+            }
+        }
     }
     #Data_Pulse_Info{
         display: none;

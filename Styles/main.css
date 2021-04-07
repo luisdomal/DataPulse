@@ -137,6 +137,8 @@
   flex-direction: column;
   text-align: center;
   box-sizing: border-box;
+  min-height: 364px;
+  height: 100%;
 }
 #Servicios h1 {
   margin-top: 50px;
@@ -180,6 +182,7 @@
 #About-Us #Aboutgrid {
   margin: 0px auto;
   max-width: 870px;
+  min-height: 500px;
 }
 #About-Us #Aboutgrid img {
   max-height: 71px;
@@ -235,7 +238,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  height: 420px;
+  min-height: 534px;
 }
 #Careers img {
   max-width: 71px;
@@ -250,7 +253,8 @@
 }
 
 #Contact {
-  max-width: 800px;
+  max-width: 1200px;
+  min-height: 534px;
   margin: 50px auto;
   position: relative;
   padding: 30px;
@@ -259,29 +263,58 @@
   position: relative;
   margin: 32px 0;
 }
-#Contact .contact-form .form-field .input-text {
+#Contact .contact-form .input-text {
   display: block;
   width: 100%;
-  height: 36px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #808080;
   border-width: 0 0 2px 0;
-  border-color: #5543ca;
+  border-color: #808080;
   line-height: 26px;
-  font-size: 18px;
   font-weight: 400;
 }
-#Contact .contact-form .form-field .input-text:focus {
+#Contact .contact-form .input-text:focus {
   outline: none;
 }
-#Contact .contact-form .form-field .label {
+#Contact .contact-form .input-text:focus + .label,
+#Contact .contact-form .input-text.not.empty + .label {
+  transform: translateY(-30px);
+}
+#Contact .contact-form .input-text + .label,
+#Contact .contact-form .input-text + .label {
+  transform: translateY(-15px);
+}
+#Contact .contact-form .label {
   position: absolute;
   left: 20px;
   bottom: 11px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #5543ca;
+  font-family: "Lato", sans-serif;
+  color: #808080;
   cursor: text;
   transition: transform 0.2s ease-in-out;
+}
+#Contact .contact-form .form-check-input {
+  margin: 5px 5px 0px 0;
+}
+#Contact .contact-form .submit-btn {
+  font-weight: 600;
+  padding: 10px 30px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  background-color: #5865ad;
+  border-color: #121327;
+  border-radius: 0px;
+  cursor: pointer;
+}
+#Contact .contact-form .submit-btn:hover {
+  background-color: #121327;
 }
 
 #Data_Pulse_Footer {
@@ -572,6 +605,21 @@
   #Careers {
     justify-content: center;
     text-align: center;
+  }
+
+  #Contact {
+    margin: 50px auto;
+    position: relative;
+    padding: 30px;
+  }
+  #Contact .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  #Contact .contact-form .submit-btn {
+    display: inline-block;
+    font-weight: 600;
+    padding: 15px 45px;
   }
 
   #Data_Pulse_Info {
